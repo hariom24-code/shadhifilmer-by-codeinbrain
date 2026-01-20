@@ -30,25 +30,25 @@ const FILMS = [
   { 
     id: 'f1', 
     thumbnail: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80', 
-    videoUrl: 'https://drive.google.com/file/d/1LZZDw-1dJ7-BBZJmmDOW2CoceIWYv8jq/preview', 
+    videoUrl: 'https://drive.google.com/file/d/1LZZDw-1dJ7-BBZJmmDOW2CoceIWYv8jq/view?usp=sharing', 
     title: 'The Eternal Vow' 
   },
   { 
     id: 'f2', 
     thumbnail: 'https://images.unsplash.com/photo-1470338745628-1fdb73251f11?auto=format&fit=crop&q=80', 
-    videoUrl: 'https://drive.google.com/file/d/1LaqAiCd1UVQUk14FqSyY94n-aETDVJ8W/preview', 
+    videoUrl: 'https://drive.google.com/file/d/1LaqAiCd1UVQUk14FqSyY94n-aETDVJ8W/view?usp=sharing', 
     title: 'Love in Udaipur' 
   },
   { 
     id: 'f3', 
     thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80', 
-    videoUrl: 'https://drive.google.com/file/d/1xjTQGza2AmcqtWChf6wXSBHdoAL0bmrH/preview', 
+    videoUrl: 'https://drive.google.com/file/d/1xjTQGza2AmcqtWChf6wXSBHdoAL0bmrH/view?usp=sharing', 
     title: 'A Royal Affair' 
   },
   { 
     id: 'f4', 
     thumbnail: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80', 
-    videoUrl: 'https://drive.google.com/file/d/1o31A0rWhyI0ljJy6FLWiyPbS7xquVS01/preview', 
+    videoUrl: 'https://drive.google.com/file/d/1o31A0rWhyI0ljJy6FLWiyPbS7xquVS01/view?usp=sharing', 
     title: 'Pre Wedding' 
   }
 ];
@@ -204,6 +204,7 @@ function initFilms() {
     
     // Extract file ID from Google Drive URL
     const fileId = film.videoUrl.split('/d/')[1].split('/')[0];
+    // Use embed endpoint for better mobile compatibility
     const embedUrl = `https://drive.google.com/file/d/${fileId}/preview`;
     
     item.innerHTML = `
@@ -212,9 +213,10 @@ function initFilms() {
           id="video-${film.id}"
           src="${embedUrl}"
           title="${film.title}"
-          allow="autoplay; fullscreen"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
           allowFullScreen
           loading="lazy"
+          referrerPolicy="no-referrer"
         ></iframe>
       </div>
     `;
