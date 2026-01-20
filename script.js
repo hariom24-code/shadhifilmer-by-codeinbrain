@@ -160,6 +160,7 @@ function initGallery() {
         class="w-full h-full object-cover loaded"
         loading="lazy"
         decoding="async"
+        sizes="(min-width: 1024px) 300px, (min-width: 640px) 250px, 200px"
         onerror="this.src='https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80'"
       />
       <div class="overlay">

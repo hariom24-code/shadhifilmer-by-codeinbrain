@@ -31,6 +31,7 @@
   
   <!-- Preload Critical Resources -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" as="style">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1600">
   
   <title>Shadhi Filmer | Wedding Photography & Films</title>
   <script src="https://cdn.tailwindcss.com" defer></script>
@@ -111,10 +112,12 @@
         <!-- Background Image -->
         <div class="absolute inset-0 z-0">
           <img 
-            src="./images/IMG_4388.JPEG" 
+            src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1600" 
             alt="Cinematic Wedding Portfolio by Shadhi Filmer" 
             class="w-full h-full object-cover scale-110"
             loading="eager"
+            fetchpriority="high"
+            decoding="async"
           />
           <div id="hero-overlay" class="absolute inset-0 bg-black opacity-100 transition-opacity"></div>
         </div>
