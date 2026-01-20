@@ -200,16 +200,15 @@ function initFilms() {
   
   FILMS.forEach((film, index) => {
     const item = document.createElement('div');
-    item.className = 'video-item relative group overflow-hidden bg-black shadow-2xl';
+    item.className = 'video-item';
     
     // Extract file ID from Google Drive URL
     const fileId = film.videoUrl.split('/d/')[1].split('/')[0];
     const embedUrl = `https://drive.google.com/file/d/${fileId}/preview`;
     
     item.innerHTML = `
-      <div class="relative w-full pt-[56.25%] bg-black">
+      <div>
         <iframe 
-          class="absolute inset-0 w-full h-full"
           id="video-${film.id}"
           src="${embedUrl}"
           title="${film.title}"
