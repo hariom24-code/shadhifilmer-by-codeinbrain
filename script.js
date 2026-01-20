@@ -30,25 +30,25 @@ const FILMS = [
   { 
     id: 'f1', 
     thumbnail: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80', 
-    videoUrl: './images/BOMABAY PRE WEDDING.mp4', 
+    videoUrl: 'https://drive.google.com/uc?export=download&id=1LZZDw-1dJ7-BBZJmmDOW2CoceIWYv8jq', 
     title: 'The Eternal Vow' 
   },
   { 
     id: 'f2', 
     thumbnail: 'https://images.unsplash.com/photo-1470338745628-1fdb73251f11?auto=format&fit=crop&q=80', 
-    videoUrl: './images/SHADHIFILMER FILMS.mp4', 
+    videoUrl: 'https://drive.google.com/uc?export=download&id=1LaqAiCd1UVQUk14FqSyY94n-aETDVJ8W', 
     title: 'Love in Udaipur' 
   },
   { 
     id: 'f3', 
     thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80', 
-    videoUrl: './images/Shindechattri pune luxelove pre wedding.mp4', 
+    videoUrl: 'https://drive.google.com/uc?export=download&id=1xjTQGza2AmcqtWChf6wXSBHdoAL0bmrH', 
     title: 'A Royal Affair' 
   },
   { 
     id: 'f4', 
     thumbnail: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80', 
-    videoUrl: './images/BOMABAY PRE WEDDING.mp4', 
+    videoUrl: 'https://drive.google.com/uc?export=download&id=1o31A0rWhyI0ljJy6FLWiyPbS7xquVS01', 
     title: 'Pre Wedding' 
   }
 ];
