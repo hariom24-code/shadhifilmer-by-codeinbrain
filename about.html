@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="About ShadhiFilmer - Founded by Rana, a luxury wedding photography studio specializing in fine-art and editorial storytelling." />
+  <meta name="keywords" content="wedding photography, destination wedding, Rana photographer, ShadhiFilmer, luxury wedding photography" />
+  <meta name="author" content="Shadhi Filmer" />
+  <meta name="theme-color" content="#0a0a0a" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shadhifilmer.com/about" />
+  <meta property="og:title" content="About ShadhiFilmer | Our Story" />
+  <meta property="og:description" content="Founded by Rana - A luxury wedding photography studio crafting visual heirlooms" />
+  
+  <title>About Us | Shadhi Filmer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+    /* Ensure Tailwind utilities work */
+    @media (min-width: 768px) {
+      .md\:hidden { display: none !important; }
+    }
+    
+    /* Custom font classes */
+    .font-cursive {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+    }
+    
+    /* Mobile menu overlay */
+    #mobile-menu {
+      transition: opacity 0.3s ease-in-out;
+    }
+    
+    #mobile-menu.hidden {
+      display: none;
+    }
+    
+    /* Smooth transitions */
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    /* Ensure proper responsive breakpoints */
+    @media (max-width: 767px) {
+      .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+    
+    /* Fix for very small screens */
+    @media (max-width: 375px) {
+      h1 {
+        font-size: 2.5rem !important;
+      }
+      
+      h2 {
+        font-size: 2rem !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="relative overflow-x-hidden selection:bg-yellow-600 selection:text-white">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-transparent py-8">
+      <div class="container mx-auto px-4 sm:px-6 flex justify-between items-center">
+        <a href="index.html" class="text-xl sm:text-2xl font-serif tracking-widest font-bold hover:text-yellow-600 transition-colors" title="Shadhi Filmer - Home">
+          SHADHI <span class="text-yellow-600">FILMER</span>
+        </a>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-4 lg:space-x-10 text-xs lg:text-sm tracking-widest uppercase font-light">
+          <a href="#portfolio" class="hover:text-yellow-600 transition-colors py-2" title="View our photography gallery">Portfolio</a>
+          <a href="#films" class="hover:text-yellow-600 transition-colors py-2" title="Watch our cinematic films">Films</a>
+          <a href="about.html" class="text-yellow-600 border-b-2 border-yellow-600 py-2" title="Our story and philosophy">About Us</a>
+          <a href="#book" class="bg-yellow-600 text-black px-6 py-2 hover:bg-yellow-700 transition-colors font-semibold" title="Book your wedding date">Book Now</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none z-50 p-2 active:scale-95 transition-transform" aria-label="Toggle Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-black/95 backdrop-blur-md pt-20 z-40">
+        <div class="flex flex-col items-center justify-center h-full space-y-8 text-lg tracking-widest uppercase font-light">
+          <a href="#portfolio" class="mobile-menu-link hover:text-yellow-600 transition-colors py-2 px-4 active:bg-yellow-600 active:text-black rounded">Portfolio</a>
+          <a href="#films" class="mobile-menu-link hover:text-yellow-600 transition-colors py-2 px-4 active:bg-yellow-600 active:text-black rounded">Films</a>
+          <a href="about.html" class="mobile-menu-link text-yellow-600 py-2 px-4 border border-yellow-600 rounded">About Us</a>
+          <a href="#book" class="mobile-menu-link bg-yellow-600 text-black py-3 px-8 hover:bg-yellow-700 transition-colors font-semibold rounded">Book Now</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section for About Page -->
+      <section class="relative w-full overflow-hidden flex items-center justify-center text-center pt-32 pb-16 sm:pt-40 sm:pb-20 min-h-[60vh] sm:min-h-[70vh]">
+        <div class="absolute inset-0 z-0">
+          <img 
+            src="./images/william-bayreuther-hfk6xOjQlFk-unsplash.jpg" 
+            alt="About ShadhiFilmer" 
+            class="w-full h-full object-cover scale-110"
+            loading="eager"
+          />
+          <div class="absolute inset-0 bg-black opacity-60"></div>
+        </div>
+
+        <div class="relative z-10 px-4 sm:px-6 max-w-4xl mx-auto">
+          <p class="text-xs sm:text-sm tracking-[0.3em] sm:tracking-[0.5em] uppercase text-yellow-600 mb-4 sm:mb-6">About Us</p>
+          <h1 class="text-4xl sm:text-6xl md:text-xl lg:text-6xl font-serif mb-4 sm:mb-4">Our Story</h1>
+          <div class="w-16 sm:w-24 h-px bg-yellow-600 mx-auto"></div>
+        </div>
+      </section>
+
+      <!-- About Content Section -->
+      <section class="py-16 sm:py-24 md:py-32 px-4 sm:px-6 bg-black overflow-hidden">
+        <div class="container mx-auto max-w-6xl relative">
+          <!-- Background Decorative Text -->
+          <div class="absolute -top-10 -left-10 text-[8rem] sm:text-[12rem] font-serif text-white/5 select-none pointer-events-none">About</div>
+          
+          <!-- Main Content -->
+          <div class="relative z-10">
+            <!-- Brand Header -->
+            <div class="text-center mb-12 sm:mb-20">
+              <h2 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-yellow-600 sm:mb-6">SHADHI FILMER</h2>
+              <p class="text-sm sm:text-base tracking-[0.2em] uppercase text-gray-400">Founded by Rana</p>
+            </div>
+
+            <!-- Founder Image Section -->
+            <div class="mb-16 sm:mb-24 flex justify-center">
+              <div class="w-full max-w-2xl px-4">
+                <div class="relative group">
+                  <img 
+                    src="./images/Rana.jpeg" 
+                    alt="Rana - Founder of ShadhiFilmer" 
+                    class="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-500 rounded-sm shadow-2xl"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                    <p class="text-yellow-600 font-serif text-2xl sm:text-3xl p-6 w-full text-center">Rana</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Story Content -->
+            <div class="max-w-4xl mx-auto space-y-8 sm:space-y-10 mb-16 sm:mb-24 px-4">
+              <p class="text-base sm:text-lg md:text-xl leading-relaxed sm:leading-relaxed md:leading-loose text-gray-300 text-center font-light">
+                ShadhiFilmer was born from a bold creative choice. In his third year pursuing a Bachelor of Arts, Rana stepped away from the conventional academic path to follow an undeniable calling — photography as an art form, not merely a profession.
+              </p>
+              
+              <p class="text-base sm:text-lg md:text-xl leading-relaxed sm:leading-relaxed md:leading-loose text-gray-300 text-center font-light">
+                What began as a freelance journey soon transformed into a global narrative. With experience across <span class="text-yellow-600 font-semibold">150+ weddings</span>, including refined destination celebrations in <span class="text-yellow-600 font-semibold">Dubai</span>, Rana developed a signature style shaped by international exposure, cultural diversity, and an uncompromising eye for detail.
+              </p>
+              
+              <p class="text-base sm:text-lg md:text-xl leading-relaxed sm:leading-relaxed md:leading-loose text-gray-300 text-center font-light">
+                Today, ShadhiFilmer stands as a <span class="text-white font-medium">luxury wedding photography studio</span>, specializing in fine-art and editorial storytelling for modern couples who seek elegance, depth, and authenticity. Our work is intentional, emotionally rich, and visually timeless — inspired by fashion, cinema, and real human connection.
+              </p>
+              
+              <p class="text-base sm:text-lg md:text-xl leading-relaxed sm:leading-relaxed md:leading-loose text-gray-300 text-center font-light">
+                Every frame is meticulously curated to preserve not just moments, but atmosphere, emotion, and legacy. We believe weddings deserve to be remembered as they are felt — graceful, powerful, and unforgettable.
+              </p>
+            </div>
+
+            <!-- Philosophy Statement -->
+            <div class="text-center max-w-3xl mx-auto mb-16 sm:mb-24 py-8 sm:py-12 border-t border-b border-white/10 px-4">
+              <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif italic leading-relaxed text-white mb-4">
+                "ShadhiFilmer doesn't just document weddings."
+              </p>
+              <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-serif text-yellow-600">
+                We craft visual heirlooms.
+              </p>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-10 sm:gap-12 md:gap-20 lg:gap-32 mb-16 sm:mb-20 px-4">
+              <div class="text-center w-full sm:w-auto">
+                <span class="block text-5xl sm:text-6xl md:text-7xl font-serif text-yellow-600 mb-3 sm:mb-4">150+</span>
+                <span class="block text-xs sm:text-sm tracking-[0.3em] sm:tracking-[0.4em] uppercase text-gray-300">Weddings Captured</span>
+                <span class="block text-xs text-gray-500 mt-2">India & Beyond</span>
+              </div>
+              <div class="text-center w-full sm:w-auto">
+                <span class="block text-5xl sm:text-6xl md:text-7xl font-serif text-yellow-600 mb-3 sm:mb-4">08+</span>
+                <span class="block text-xs sm:text-sm tracking-[0.3em] sm:tracking-[0.4em] uppercase text-gray-300">Years of Artistry</span>
+                <span class="block text-xs text-gray-500 mt-2">Since 2016</span>
+              </div>
+              <div class="text-center w-full sm:w-auto">
+                <span class="block text-5xl sm:text-6xl md:text-7xl font-serif text-yellow-600 mb-3 sm:mb-4">Global</span>
+                <span class="block text-xs sm:text-sm tracking-[0.3em] sm:tracking-[0.4em] uppercase text-gray-300">Recognition</span>
+                <span class="block text-xs text-gray-500 mt-2">Dubai & India</span>
+              </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center max-w-2xl mx-auto px-4">
+              <p class="text-base sm:text-lg text-gray-400 mb-8">
+                Let's create something timeless together
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center items-stretch sm:items-center">
+                <a 
+                  href="index.html#book" 
+                  class="w-full sm:w-auto px-8 py-4 bg-yellow-600 text-white font-semibold uppercase tracking-widest text-sm hover:bg-yellow-700 transition-all duration-300 active:scale-95 rounded-sm text-center min-h-[50px] flex items-center justify-center"
+                >
+                  Book Your Date
+                </a>
+                <a 
+                  href="index.html#portfolio" 
+                  class="w-full sm:w-auto px-8 py-4 border border-white text-white font-semibold uppercase tracking-widest text-sm hover:bg-white/10 transition-all duration-300 active:scale-95 rounded-sm text-center min-h-[50px] flex items-center justify-center"
+                >
+                  View Portfolio
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-20 px-6 bg-black border-t border-white/5">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+          <div>
+            <h3 class="text-2xl font-serif mb-4">SHADHI <span class="text-yellow-600">FILMER</span></h3>
+            <p class="text-sm text-gray-400 font-light leading-relaxed">
+              Crafting timeless visual narratives for your most precious moments across India and beyond.
+            </p>
+          </div>
+          
+          <div>
+            <h4 class="text-sm uppercase tracking-widest mb-4 text-gray-400">Quick Links</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="index.html#portfolio" class="hover:text-yellow-600 transition-colors">Portfolio</a></li>
+              <li><a href="index.html#films" class="hover:text-yellow-600 transition-colors">Films</a></li>
+              <li><a href="about.html" class="hover:text-yellow-600 transition-colors">About Us</a></li>
+              <li><a href="index.html#book" class="hover:text-yellow-600 transition-colors">Book Now</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-sm uppercase tracking-widest mb-4 text-gray-400">Contact</h4>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <span class="text-yellow-600">📞</span>
+                <a href="tel:+917798200639" class="hover:text-yellow-600 transition-colors">+91 77982 00639</a>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-yellow-600">📧</span>
+                <a href="mailto:shadhifilmer@gmail.com" class="hover:text-yellow-600 transition-colors">shadhifilmer@gmail.com</a>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-yellow-600">📍</span>
+                <span class="text-gray-400">Pune, India</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="border-t border-white/5 pt-8 text-center">
+          <p class="text-xs text-gray-500 tracking-wide">
+            © 2026 Shadhi Filmer. All rights reserved. | Destination Wedding Photography
+          </p>
+          <p class="text-xs text-gray-600 tracking-wide mt-3">
+            Design by <a href="https://www.instagram.com/code.inbrain/" target="_blank" rel="noopener noreferrer" class="text-yellow-600 hover:text-yellow-500 transition-colors">codeinbrain</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Social Media Buttons -->
+    <div class="fixed bottom-6 right-6 sm:bottom-10 sm:right-10 flex flex-col gap-3 sm:gap-4 z-40">
+      <a 
+        href="https://wa.me/917798200639" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="bg-green-600 hover:bg-green-700 text-white p-3 sm:p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95"
+        title="Chat on WhatsApp"
+        aria-label="WhatsApp"
+      >
+        <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+      </a>
+      
+      <a 
+        href="https://instagram.com/shadhifilmer" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="bg-gradient-to-br from-purple-600 via-pink-600 to-orange-600 hover:from-purple-700 hover:via-pink-700 hover:to-orange-700 text-white p-3 sm:p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95"
+        title="Follow on Instagram"
+        aria-label="Instagram"
+      >
+        <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // Navbar scroll effect and mobile menu
+    document.addEventListener('DOMContentLoaded', function() {
+      const navbar = document.getElementById('navbar');
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIcon = document.getElementById('menu-icon');
+      const closeIcon = document.getElementById('close-icon');
+      const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+      // Navbar scroll effect - keep solid background on about page
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          navbar.classList.add('shadow-lg');
+          navbar.classList.remove('py-6');
+          navbar.classList.add('py-4');
+        } else {
+          navbar.classList.remove('shadow-lg');
+          navbar.classList.remove('py-4');
+          navbar.classList.add('py-6');
+        }
+      });
+
+      // Mobile menu toggle
+      if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', function() {
+          mobileMenu.classList.toggle('hidden');
+          menuIcon.classList.toggle('hidden');
+          closeIcon.classList.toggle('hidden');
+          document.body.classList.toggle('overflow-hidden');
+        });
+      }
+
+      // Close mobile menu when clicking on a link
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          mobileMenu.classList.add('hidden');
+          menuIcon.classList.remove('hidden');
+          closeIcon.classList.add('hidden');
+          document.body.classList.remove('overflow-hidden');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
